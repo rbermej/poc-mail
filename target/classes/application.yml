@@ -1,0 +1,53 @@
+spring:
+  profiles:
+    active:
+    - local
+    #- local_gmail
+    #- local_office365
+
+---
+#LOCAL 
+spring:
+  profiles: local
+  mail:
+    host: localhost
+    port: 25
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+
+---
+#LOCAL_GMAIL    
+spring:
+  profiles: local_gmail
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: <username>
+    password: <password>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+---
+#LOCAL_OFFICE365 (everis) 
+spring:
+  profiles: local_office365
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: <username>
+    password: <password>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            

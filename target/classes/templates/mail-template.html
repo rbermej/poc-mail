@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es-ES" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+	<h1>Mail automático</h1>
+	<p>Buenos días <span th:text="${to}"></span>,</p>
+	<p>Este es un mail generado con Spring Mail y utilizando plantillas.</p>
+	<p>Saludos,</p>
+	<p th:text="${from}"></p>
+</body>
+</html>

@@ -1,0 +1,6 @@
+demo\mail\MailApplication.class
+demo\mail\controller\EmailController.class
+demo\mail\config\MailConfig.class
+demo\mail\config\SwaggerConfig.class
+demo\mail\service\EmailService.class
+demo\mail\service\impl\EmailServiceImpl.class
